@@ -89,8 +89,10 @@ export default function Header({ setSidebarOpen }) {
             </div>
           {/* CART */}
           <div className="relative" ref={cartRef}>
-            <div className=" flex items-center gap-1 border py-1 px-2 rounded-xl text-white justify-center cursor-pointer">
-            <button onClick={() => setCartOpen(true)}>
+            <div
+             onClick={() => setCartOpen(true)}
+            className=" flex items-center gap-1 border py-1 px-2 rounded-xl text-white justify-center cursor-pointer">
+            <button>
               <FaShoppingCart className="cursor-pointer" />
             </button>
                Cart
