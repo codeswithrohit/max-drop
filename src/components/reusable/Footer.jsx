@@ -54,11 +54,11 @@ export default function Footer() {
       </div>
 
       {/* 🔥 MAIN FOOTER */}
-      <div className="bg-gray-100 py-10">
+      <div className="bg-[#EEEEEE] py-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {/* LOGO + TEXT */}
           <div>
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold text-gray-700">
               MAX<span className="text-red-500">DROP</span>
             </h2>
             <p className="text-gray-600 text-sm mt-4 leading-6">
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* MY ACCOUNT */}
           <div>
-            <h3 className="font-bold mb-4">MY ACCOUNT</h3>
+            <h3 className="font-bold mb-4 text-gray-700">MY ACCOUNT</h3>
             <ul className="space-y-2 text-gray-600 text-sm">
               <li>› Brands</li>
               <li>› Gift Certificates</li>
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* INFORMATION */}
           <div>
-            <h3 className="font-bold mb-4">INFORMATION</h3>
+            <h3 className="font-bold mb-4 text-gray-700">INFORMATION</h3>
             <ul className="space-y-2 text-gray-600 text-sm">
               <li>› About Us</li>
               <li>› FAQ</li>
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* ABOUT */}
           <div>
-            <h3 className="font-bold mb-4">ABOUT US</h3>
+            <h3 className="font-bold mb-4 text-gray-700">ABOUT US</h3>
 
             <div className="space-y-3 text-sm text-gray-600">
               <p className="flex items-center gap-2">
@@ -139,7 +139,7 @@ export default function Footer() {
       </div>
 
       {/* 🔥 BOTTOM BAR */}
-      <div className="bg-gray-200 py-3 text-center text-sm text-gray-600">
+      <div className="bg-[#EEEEEE] py-3 text-center text-sm text-gray-600">
         Maxdrop © 2018 - 2019. MAGENTECH Store. All Rights Reserved.
       </div>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
@@ -103,16 +103,18 @@ const CountdownBox = () => (
   </div>
 );
 
+
 export default function HotDealsSection() {
+    const router = useRouter();
   return (
     <div className=" py-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
         
         {/* LEFT SECTION */}
-        <div className="lg:col-span-3 bg-white">
+        <div className="lg:col-span-3 bg-white px-5 md:px-0">
           
           {/* HEADER */}
-          <div className="flex items-center justify-between border-b-2 border-red-500  mb-4">
+          <div className="flex items-center justify-between border-b-2 border-red-500  mb-4 ">
             <div className="bg-red-500 text-white px-4 py-1 font-bold clip-ribbon">
               HOT DEALS
             </div>
@@ -144,7 +146,9 @@ export default function HotDealsSection() {
             }}
           >
             {products.map((item) => (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide
+                onClick={() => router.push("/productDetail/Product-detail")}
+              key={item.id}>
                 <div className="border-1 border-gray-300 p-3 relative bg-white">
                   
                   {/* BADGES */}
@@ -212,7 +216,9 @@ export default function HotDealsSection() {
 
           <div className="border-1 border-gray-300">
             {bestSellers.map((item) => (
-              <div key={item.id} className="flex gap-3 border-b border-gray-300 py-2 px-2 ">
+              <div key={item.id}
+                 onClick={() => router.push("/productDetail/Product-detail")}
+              className="flex gap-3 border-b border-gray-300 py-2 px-2 ">
                 
                 <img
                   src={item.image}

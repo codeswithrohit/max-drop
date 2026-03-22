@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function ProductSection({
   title,
@@ -12,6 +13,7 @@ export default function ProductSection({
   featuredProduct,
 }) {
   const [filter, setFilter] = useState("default");
+  const router = useRouter();
 
   const sortedProducts = [...products].sort((a, b) => {
     if (filter === "price") return a.price - b.price;
@@ -119,7 +121,7 @@ export default function ProductSection({
 
         {/* CATEGORY */}
         <div className="p-4 border-r border-gray-300 h-full">
-          <h3 className="font-bold mb-3">HOT CATEGORIES</h3>
+          <h3 className="font-bold mb-3 text-gray-700">HOT CATEGORIES</h3>
 
           <ul className="space-y-2 text-sm text-gray-600">
             {categories.map((cat, i) => (
@@ -136,6 +138,7 @@ export default function ProductSection({
           {sortedProducts.map((item) => (
             <div
               key={item.id}
+               onClick={() => router.push("/productDetail/Product-detail")}
               className="border-1 border-gray-300 p-3 relative flex flex-col justify-between h-full"
             >
               {/* BADGES */}
@@ -165,7 +168,7 @@ export default function ProductSection({
               </div>
 
               {/* TITLE */}
-              <p className="text-sm mt-1 text-center">
+              <p className="text-sm mt-1 text-center text-gray-700">
                 {item.title}
               </p>
 

@@ -70,14 +70,14 @@ export default function NewsBestSellerTestimonial() {
         
         {/* NEWS */}
         <div>
-          <h2 className="font-bold text-lg mb-4">NEWS UPDATES</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-700">NEWS UPDATES</h2>
 
           <div className="space-y-6">
             {news.map((item, i) => (
               <div key={i} className="flex gap-4">
                 
                 {/* DATE BOX */}
-                <div className="bg-gray-200 w-30 h-15 flex flex-col items-center justify-center text-sm font-semibold">
+                <div className="bg-gray-200 w-30 h-15 flex flex-col items-center justify-center text-sm font-semibold text-gray-700">
                   <span>{item.date}</span>
                   <span>{item.month}</span>
                 </div>
@@ -98,7 +98,7 @@ export default function NewsBestSellerTestimonial() {
 
         {/* BESTSELLERS */}
         <div>
-          <h2 className="font-bold text-lg mb-4">BESTSELLERS</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-700">BESTSELLERS</h2>
 
           <div className="space-y-6">
             {bestsellers.map((item, i) => (
@@ -132,7 +132,7 @@ export default function NewsBestSellerTestimonial() {
 
         {/* TESTIMONIAL */}
         <div className="bg-gray-200 p-6">
-          <h2 className="font-bold text-lg mb-4">TESTIMONIAL</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-700">TESTIMONIAL</h2>
 
           <div className="flex gap-4">
             
