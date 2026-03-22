@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.clip-ribbon {
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
